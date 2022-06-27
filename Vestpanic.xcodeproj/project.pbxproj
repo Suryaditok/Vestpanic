@@ -14,6 +14,9 @@
 		C3088CF628671CC4003E9E17 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3088CF528671CC4003E9E17 /* OnboardView.swift */; };
 		C3088CF928672E89003E9E17 /* PanicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3088CF828672E89003E9E17 /* PanicButtonView.swift */; };
 		C3088CFB28673EF1003E9E17 /* LoadingLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3088CFA28673EF1003E9E17 /* LoadingLogoView.swift */; };
+		C357E65128674CF000297F4C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E65028674CF000297F4C /* LoadingView.swift */; };
+		C357E653286767B500297F4C /* HelpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E652286767B500297F4C /* HelpPageView.swift */; };
+		C357E65528687CB100297F4C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E65428687CB100297F4C /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		C3088CF528671CC4003E9E17 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		C3088CF828672E89003E9E17 /* PanicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicButtonView.swift; sourceTree = "<group>"; };
 		C3088CFA28673EF1003E9E17 /* LoadingLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingLogoView.swift; sourceTree = "<group>"; };
+		C357E65028674CF000297F4C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C357E652286767B500297F4C /* HelpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPageView.swift; sourceTree = "<group>"; };
+		C357E65428687CB100297F4C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				C3088CF528671CC4003E9E17 /* OnboardView.swift */,
+				C357E65028674CF000297F4C /* LoadingView.swift */,
+				C357E652286767B500297F4C /* HelpPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			children = (
 				C3088CF828672E89003E9E17 /* PanicButtonView.swift */,
 				C3088CFA28673EF1003E9E17 /* LoadingLogoView.swift */,
+				C357E65428687CB100297F4C /* TabBarView.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -163,10 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3088CE72865C383003E9E17 /* ContentView.swift in Sources */,
+				C357E653286767B500297F4C /* HelpPageView.swift in Sources */,
+				C357E65528687CB100297F4C /* TabBarView.swift in Sources */,
 				C3088CFB28673EF1003E9E17 /* LoadingLogoView.swift in Sources */,
 				C3088CF628671CC4003E9E17 /* OnboardView.swift in Sources */,
 				C3088CF928672E89003E9E17 /* PanicButtonView.swift in Sources */,
 				C3088CE52865C383003E9E17 /* VestpanicApp.swift in Sources */,
+				C357E65128674CF000297F4C /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

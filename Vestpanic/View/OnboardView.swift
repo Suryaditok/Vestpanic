@@ -14,6 +14,9 @@ struct OnboardView: View {
                 .ignoresSafeArea()
             
             VStack {
+                Spacer()
+                    .frame(height: 76)
+                
                 Logo()
                 
                 Spacer()
@@ -24,7 +27,7 @@ struct OnboardView: View {
                     .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 196)
+                    .frame(height: 150)
 
                 
                 SignInButton()
