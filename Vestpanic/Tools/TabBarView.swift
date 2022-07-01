@@ -15,10 +15,6 @@ struct TabBarView: View {
     
     var body: some View {
         
-        Rectangle()
-            .fill(Color.white)
-            .frame(width: 390, height: 73, alignment: .center)
-        
         TabView{
             
             HelpPageView()

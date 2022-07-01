@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HelpPageView: View {
+struct HelpPageView: View { 
     var body: some View {
         ZStack{
             Rectangle()
@@ -47,40 +47,7 @@ struct HelpPageView: View {
                 }
                 .position(x: 190, y: 50)
                 
-                ZStack {
-                    RoundedRectangle(cornerRadius: 50)
-                        .fill(.white)
-                        .frame(width: 390, height: 649)
-                    
-                    VStack{
-                        Text("Emergency Help Needed?")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 289, height: 86, alignment: .center)
-                            .font(.system(size: 36, weight: .bold))
-                            .padding(.bottom)
-                        
-                        Text("Hold The Button for 3 seconds to Asking Help")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 268, height: 48, alignment: .center)
-                            .font(.system(size: 20, weight: .regular))
-                            .foregroundColor(.secondary)
-                            .padding(.bottom)
-                        
-                        PanicButtonView()
-                        
-                        Text("Try to solve by yourself?")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 189, height: 19, alignment: .center)
-                            .font(.system(size: 16, weight: .bold))
-                            .padding(.top)
-                        
-                        Text("Choose your technical problem below")
-                            .multilineTextAlignment(.center)
-                            .frame(width: 273, height: 19, alignment: .center)
-                            .font(.system(size: 16, weight: .regular))
-                            .foregroundColor(.secondary)
-                    }
-                }
+                EmergencyContent()
             }
         }
     }
@@ -90,5 +57,45 @@ struct HelpPageView_Previews: PreviewProvider {
     static var previews: some View {
         HelpPageView()
             .previewInterfaceOrientation(.portrait)
+    }
+}
+
+struct EmergencyContent: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 50)
+                .fill(.white)
+                .frame(width: 390, height: 649, alignment: .center)
+                .position(x: 196, y: 200)
+            
+            VStack{
+                Text("Emergency Help Needed?")
+                    .multilineTextAlignment(.center)
+                    .frame(width: 289, height: 86, alignment: .center)
+                    .font(.system(size: 36, weight: .bold))
+                    .padding(.bottom)
+                
+                Text("Hold The Button for 3 seconds to Asking Help")
+                    .multilineTextAlignment(.center)
+                    .frame(width: 268, height: 48, alignment: .center)
+                    .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(.secondary)
+                    .padding(.bottom)
+                
+                PanicButtonView()
+                
+                Text("Try to solve by yourself?")
+                    .multilineTextAlignment(.center)
+                    .frame(width: 189, height: 19, alignment: .center)
+                    .font(.system(size: 16, weight: .bold))
+                    .padding(.top)
+                
+                Text("Choose your technical problem below")
+                    .multilineTextAlignment(.center)
+                    .frame(width: 273, height: 19, alignment: .center)
+                    .font(.system(size: 16, weight: .regular))
+                    .foregroundColor(.secondary)
+            }
+        }
     }
 }

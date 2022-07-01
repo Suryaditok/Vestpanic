@@ -17,6 +17,7 @@
 		C357E65128674CF000297F4C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E65028674CF000297F4C /* LoadingView.swift */; };
 		C357E653286767B500297F4C /* HelpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E652286767B500297F4C /* HelpPageView.swift */; };
 		C357E65528687CB100297F4C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C357E65428687CB100297F4C /* TabBarView.swift */; };
+		C3DE898C28696E0C00F58B51 /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE898B28696E0C00F58B51 /* TutorialModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C357E65028674CF000297F4C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C357E652286767B500297F4C /* HelpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPageView.swift; sourceTree = "<group>"; };
 		C357E65428687CB100297F4C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C3DE898B28696E0C00F58B51 /* TutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		C3088CE32865C383003E9E17 /* Vestpanic */ = {
 			isa = PBXGroup;
 			children = (
+				C3DE898A28696DFF00F58B51 /* Model */,
 				C3088CF728672E68003E9E17 /* Tools */,
 				C3088CF228671C3C003E9E17 /* View */,
 				C3088CE42865C383003E9E17 /* VestpanicApp.swift */,
@@ -99,6 +102,14 @@
 				C357E65428687CB100297F4C /* TabBarView.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		C3DE898A28696DFF00F58B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE898B28696E0C00F58B51 /* TutorialModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			files = (
 				C3088CE72865C383003E9E17 /* ContentView.swift in Sources */,
 				C357E653286767B500297F4C /* HelpPageView.swift in Sources */,
+				C3DE898C28696E0C00F58B51 /* TutorialModel.swift in Sources */,
 				C357E65528687CB100297F4C /* TabBarView.swift in Sources */,
 				C3088CFB28673EF1003E9E17 /* LoadingLogoView.swift in Sources */,
 				C3088CF628671CC4003E9E17 /* OnboardView.swift in Sources */,
@@ -304,15 +316,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vestpanic/Preview Content\"";
 				DEVELOPMENT_TEAM = JY4LC4DV9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vestpanic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,15 +346,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vestpanic/Preview Content\"";
 				DEVELOPMENT_TEAM = JY4LC4DV9B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vestpanic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
